@@ -1,0 +1,64 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Pierwsze pytanie?",
+            "answers": [
+                "baba",
+                "halina",
+                "celina",
+                "huka"
+            ],
+            "right_answer": "d"
+        },
+        {
+            "id": 2,
+            "question": "Drugie pytanie?",
+            "answers": [
+                "baba",
+                "halina",
+                "celina",
+                "huka"
+            ],
+            "right_answer": "d"
+        },
+        {
+            "id": 3,
+            "question": "Czy śą polskie znaćki?",
+            "answers": [
+                "tać",
+                "nieć"
+            ],
+            "right_answer": "a"
+        },
+        {
+            "id": 4,
+            "question": "fwafawfwafwa",
+            "answers": [
+                "łłłł",
+                "śśśśśśąąąąąą"
+            ],
+            "right_answer": "a"
+        },
+        {
+            "id": 5,
+            "question": "Czy teraz wszstko jest okey?",
+            "answers": [
+                "tak",
+                "tak",
+                "nie"
+            ],
+            "right_answer": "b"
+        },
+        {
+            "id": 6,
+            "question": "Czy jutro bedzie padać?",
+            "answers": [
+                "tak",
+                "nie",
+                "może"
+            ],
+            "right_answer": "a"
+        }
+    ]
+}
