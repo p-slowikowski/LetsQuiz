@@ -1,14 +1,22 @@
+"""From this file are realise the main functions Quiz app"""
 import json
 from question import Question
 from append_questions import AppendQuestions
 
 
 class Game:
+    """
+    The Main Class stores all functions
+    """
     def __init__(self, file):
         self.file = file
         self.score = 0
 
     def initialize_game(self):
+        """
+        Initalize the main funkcjon app.
+        :rtype: object class Game
+        """
         with open(self.file, mode='r', encoding='utf-8') as file:
             feeds = json.load(file)
         game = input("Czy jesteś gotowy do gry? tak/nie ")
@@ -35,6 +43,10 @@ class Game:
             json.dump(results, file, indent=4)
 
     def initialize_append_question(self):
+        """
+        Function which append new question to data (json)
+        :rtype: object
+        """
         x = input("Czy chcesz dodać pytanie?")
         if x == "tak":
             append = AppendQuestions(self.file)
@@ -42,7 +54,10 @@ class Game:
             print(a)
 
     def initialize_list_score(self):
-
+        """
+        function show TOP 10 the highest scores users
+        :rtype: object
+        """
         with open("users_score.json", "r") as file:
             results = json.load(file)
             sort_users = sorted(results["dict_scores"], key=lambda d: d["points"], reverse=True)
@@ -52,6 +67,10 @@ class Game:
             print(f"Miejsce nr.{user+1}: {sort_users[user]['name']}. Ilość punktów: {sort_users[user]['points']}")
 
     def questions_list(self):
+        """
+        Function show all questions with possible answers.
+        :rtype: object
+        """
         with open(self.file, mode='r', encoding='utf-8') as file:
             feeds = json.load(file)
         for key in feeds["questions"]:
