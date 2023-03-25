@@ -2,7 +2,7 @@ from game import Game
 
 
 def initialize_menu():
-    print("Witaj w quiz lecie by PS")
+    print("Witaj w grze Let's Quiz!")
 
     while True:
         game = Game("questions.json")

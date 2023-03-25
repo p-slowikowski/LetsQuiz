@@ -19,14 +19,14 @@ class Game:
         """
         with open(self.file, mode='r', encoding='utf-8') as file:
             feeds = json.load(file)
-        game = input("Czy jesteś gotowy do gry? tak/nie ")
+        game = input("Czy jesteś gotowy do gry? Wpisz tak/nie ")
         name = input("Zanim zaczniemy, podaj swoje imię: ")
         if game == "tak":
-            print("Więc zaczynamy zabawę")
+            print("Więc zaczynamy Quiz... ")
             for key in feeds["questions"]:
                 question = Question(key['id'], key['question'], key["answers"], key['right_answer'])
                 print(question)
-                user_answer = input("Podaj właściwą odpowiedz...")
+                user_answer = input("Podaj właściwą odpowiedz... ")
                 if question.check_answer(user_answer) is True:
                     self.score += 1
             print(f"Brawo {name} zdobywasz {self.score} punktów!")
@@ -47,7 +47,7 @@ class Game:
         Function which append new question to data (json)
         :rtype: object
         """
-        x = input("Czy chcesz dodać pytanie?")
+        x = input("Czy chcesz dodać pytanie? Wpisz tak/nie ")
         if x == "tak":
             append = AppendQuestions(self.file)
             a = append.initialize()
@@ -61,7 +61,7 @@ class Game:
         with open("users_score.json", "r") as file:
             results = json.load(file)
             sort_users = sorted(results["dict_scores"], key=lambda d: d["points"], reverse=True)
-        print("Hall of Fame!!!")
+        print("Ściana sławy! ")
         print("TOP 10")
         for user in range(9):
             print(f"Miejsce nr.{user+1}: {sort_users[user]['name']}. Ilość punktów: {sort_users[user]['points']}")
