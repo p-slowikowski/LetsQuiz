@@ -2,63 +2,64 @@
     "questions": [
         {
             "id": 1,
-            "question": "Pierwsze pytanie?",
+            "question": "Jak miał na imię amerykański astronauta Armstrong?",
             "answers": [
-                "baba",
-                "halina",
-                "celina",
-                "huka"
-            ],
-            "right_answer": "d"
-        },
-        {
-            "id": 2,
-            "question": "Drugie pytanie?",
-            "answers": [
-                "baba",
-                "halina",
-                "celina",
-                "huka"
-            ],
-            "right_answer": "d"
-        },
-        {
-            "id": 3,
-            "question": "Czy śą polskie znaćki?",
-            "answers": [
-                "tać",
-                "nieć"
+                "Neil",
+                "Louis",
+                "Lance"
             ],
             "right_answer": "a"
         },
         {
-            "id": 4,
-            "question": "fwafawfwafwa",
+            "id": 2,
+            "question": "2+2x2",
             "answers": [
-                "łłłł",
-                "śśśśśśąąąąąą"
+                "10",
+                "8",
+                "6",
+                "4"
+            ],
+            "right_answer": "c"
+        },
+        {
+            "id": 3,
+            "question": "Jeff Bezos, najbogatszy człowiek świata, jest właścicielem?",
+            "answers": [
+                "Samsunga",
+                "Walmartu",
+                "Amazona",
+                "Facebooka"
+            ],
+            "right_answer": "c"
+        },
+        {
+            "id": 4,
+            "question": "Walutą jakiego kraju jest Forint?",
+            "answers": [
+                "Węgry",
+                "Wenezuela"
             ],
             "right_answer": "a"
         },
         {
             "id": 5,
-            "question": "Czy teraz wszstko jest okey?",
+            "question": "Sól, której używamy w kuchni, jest chlorkiem?",
             "answers": [
-                "tak",
-                "tak",
-                "nie"
+                "Potasu",
+                "Sodu",
+                "Wapnia"
             ],
             "right_answer": "b"
         },
         {
             "id": 6,
-            "question": "Czy jutro bedzie padać?",
+            "question": "Stolica Hiszpani to?",
             "answers": [
-                "tak",
-                "nie",
-                "może"
+                "Barcelona",
+                "Madryt",
+                "Sewilla"
             ],
-            "right_answer": "a"
+            "right_answer": "b"
         }
     ]
 }

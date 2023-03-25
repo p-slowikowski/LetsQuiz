@@ -1,88 +1,52 @@
 {
     "dict_scores": [
         {
-            "name": "name",
-            "points": 3
+            "name": "Janek",
+            "points": 2
+        },
+        {
+            "name": "Marysia",
+            "points": 4
+        },
+        {
+            "name": "Kamil",
+            "points": 2
+        },
+        {
+            "name": "Arek",
+            "points": 1
+        },
+        {
+            "name": "Piotrek",
+            "points": 6
         },
         {
             "name": "Patryk",
             "points": 4
         },
         {
-            "name": "Patryk",
+            "name": "Agata",
+            "points": 4
+        },
+        {
+            "name": "Kinga",
+            "points": 6
+        },
+        {
+            "name": "Paula",
+            "points": 4
+        },
+        {
+            "name": "Anka",
+            "points": 0
+        },
+        {
+            "name": "Janina",
             "points": 2
         },
         {
-            "name": "Patryk",
-            "points": 10
-        },
-        {
-            "name": "Patryk",
-            "points": 6
-        },
-        {
-            "name": "Patryk",
-            "points": 3
-        },
-        {
-            "name": "Patryk",
-            "points": 1
-        },
-        {
-            "name": "Patryk",
-            "points": 8
-        },
-        {
-            "name": "Patryk",
-            "points": 7
-        },
-        {
-            "name": "Jacek",
-            "points": 3
-        },
-        {
-            "name": "Patryk",
-            "points": 6
-        },
-        {
-            "name": "Patryk",
-            "points": 6
-        },
-        {
-            "name": "Patryk",
-            "points": 6
-        },
-        {
-            "name": "Patryk",
-            "points": 6
-        },
-        {
-            "name": "Patryk",
-            "points": 6
-        },
-        {
-            "name": "Patryk",
-            "points": 6
-        },
-        {
-            "name": "Patryk",
-            "points": 6
-        },
-        {
-            "name": "Patryk",
-            "points": 6
-        },
-        {
-            "name": "Patryk",
-            "points": 6
-        },
-        {
-            "name": "Patryk",
-            "points": 6
-        },
-        {
-            "name": "Julka",
-            "points": 0
+            "name": "Marek",
+            "points": 2
         }
-    ]
+            ]
 }
