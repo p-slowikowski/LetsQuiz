@@ -25,4 +25,3 @@ class AppendQuestions:
 
         with open(self.file, mode='w', encoding='utf-8') as file:
             json.dump(feeds, file, indent=4, ensure_ascii=False)
-

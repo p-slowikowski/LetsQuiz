@@ -19,17 +19,15 @@ class Game:
         """
         with open(self.file, mode='r', encoding='utf-8') as file:
             feeds = json.load(file)
-        game = input("Czy jesteś gotowy do gry? Wpisz tak/nie ")
         name = input("Zanim zaczniemy, podaj swoje imię: ")
-        if game == "tak":
-            print("Więc zaczynamy Quiz... ")
-            for key in feeds["questions"]:
-                question = Question(key['id'], key['question'], key["answers"], key['right_answer'])
-                print(question)
-                user_answer = input("Podaj właściwą odpowiedz... ")
-                if question.check_answer(user_answer) is True:
-                    self.score += 1
-            print(f"Brawo {name} zdobywasz {self.score} punktów!")
+        print("Więc zaczynamy Quiz... ")
+        for key in feeds["questions"]:
+            question = Question(key['id'], key['question'], key["answers"], key['right_answer'])
+            print(question)
+            user_answer = input("Podaj właściwą odpowiedz... ")
+            if question.check_answer(user_answer) is True:
+                self.score += 1
+        print(f"Brawo {name} zdobywasz {self.score} punktów!")
 
         with open("users_score.json", "r") as file:
             results = json.load(file)
@@ -47,13 +45,12 @@ class Game:
         Function which append new question to data (json)
         :rtype: object
         """
-        x = input("Czy chcesz dodać pytanie? Wpisz tak/nie ")
-        if x == "tak":
-            append = AppendQuestions(self.file)
-            a = append.initialize()
-            print(a)
+        append = AppendQuestions(self.file)
+        add_to_json = append.initialize()
+        print(add_to_json)
 
-    def initialize_list_score(self):
+    @staticmethod
+    def initialize_list_score():
         """
         function show TOP 10 the highest scores users
         :rtype: object
@@ -76,11 +73,3 @@ class Game:
         for key in feeds["questions"]:
             question = Question(key['id'], key['question'], key["answers"], key['right_answer'])
             print(question)
-
-
-
-
-
-
-
-
