@@ -1,15 +1,19 @@
+"""Class ApeendQuestion which user can add new question to data"""
 import json
-from question import Question
 from string import ascii_lowercase
+from question import Question
 
 
 class AppendQuestions:
-
+    """ Main class to add a new question to question.json file"""
     def __init__(self, file):
         self.file = file
 
     def initialize(self):
-
+        """
+        Function initialize add new question to data
+        return: Noone
+        """
         with open(self.file, mode='r', encoding='utf-8') as file:
             feeds = json.load(file)
         id_quest = feeds['questions'][-1]["id"] + 1
